@@ -1,1 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  --font-bebas: "Bebas Neue Cyrillic";
+  --font-martian: "Martian Mono";
+  --color-body: #1d18a9;
+  --color-accent: #8adafe;
+}
+
+@layer {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-body text-white font-martian;
+  }
+}
+
+@utility container-base {
+  @apply max-w-390 mx-auto px-5;
+}
+
+@utility main-blur {
+  backdrop-filter: blur(16.700000762939453px);
+  @apply bg-white/20;
+}
