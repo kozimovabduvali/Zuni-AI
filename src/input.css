@@ -17,6 +17,9 @@
   body {
     @apply bg-body text-white font-martian;
   }
+  button {
+    @apply cursor-pointer;
+  }
 }
 
 @utility container-base {
